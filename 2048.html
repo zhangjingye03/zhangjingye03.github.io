@@ -3,37 +3,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<script language='javascript' src='2048.js'></script>
     <script language="javascript" src="jquery-1.11.2.min.js"></script>
-	<body style='text-align:center;background-color:rgb(250,248,239)' scroll="no"><!--font-size:48px;-->
-		<h1 id='h1' style='position:absolute'>2048</h1>
-		<h2 id='h2' style='position:absolute;left:25%;right:25%;bottom:10%'>Score : 0</h2>
+    <script language="javascript" src="cookie.js"></script>
+    <style type="text/css">
+		center{
+			padding-top:16px;
+		}
+	</style>
+	<body style='text-align:center;background-color:rgb(250,248,239);font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;' scroll="no">
         <div id='fuckclass' class="game"></div>
-		<div id='all' style='position:absolute'>
-		<!--div id='a1'>
-			<label id='b1' class='game'>1</label>
-			<label id='b2' class='game'>1</label>
-			<label id='b3' class='game'>1</label>
-			<label id='b4' class='game'>1</label>
-		</div>
-		<div id='a2'>
-			<label id='b5' class='game'>1</label>
-			<label id='b6' class='game'>1</label>
-			<label id='b7' class='game'>1</label>
-			<label id='b8' class='game'>1</label>
-		</div>
-		<div id='a3'>
-			<label id='b9' class='game'>1</label>
-			<label id='b10' class='game'>1</label>
-			<label id='b11' class='game'>1</label>
-			<label id='b12' class='game'>1</label>
-		</div>
-		<div id='a4'>
-			<label id='b13' class='game'>1</label>
-			<label id='b14' class='game'>1</label>
-			<label id='b15' class='game'>1</label>
-			<label id='b16' class='game'>1</label>
-		</div-->
-		</div>
-		<input type='button' id='restart' value='Retry~' onclick='game_restart()' ontouchend='game_start()' style='position:absolute;bottom:2px;height:8%;left:35%;right:35%'>
+        <h1 id='h1' style='color: #776e65;font-size:54px;'>2048</h1>
+        <h3 id='h3' style='font-size:12px;'>Move the numbers to get 2048 tile!</h2>
+        <br>
+        <div id='all' style='position:relative;border-radius: 6px;background-color:rgb(187,173,160);height:65%;'></div>
+        <h2 id='h2' style='font-size:15px;'>Score : 0</h2>
+        <div id='restart' onclick='game_restart()' ontouchend='game_restart()' style='border-radius: 6px;background-color:rgb(187,173,160);margin-left:40%;margin-right:40%;background-color:#8f7a66;color:#ffffff'>Retry ~</div>
 	</body>
 	
 </head>
